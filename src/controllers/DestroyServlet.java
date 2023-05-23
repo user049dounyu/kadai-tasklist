@@ -13,16 +13,16 @@ import models.Task;
 import utils.DBUtil;
 
 /**
- * Servlet implementation class DestoryServlet
+ * Servlet implementation class DestroyServlet
  */
-@WebServlet("/destory")
-public class DestoryServlet extends HttpServlet {
+@WebServlet("/destroy")
+public class DestroyServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DestoryServlet() {
+    public DestroyServlet() {
         super();
     }
 
