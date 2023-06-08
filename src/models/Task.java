@@ -25,6 +25,9 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "name", length = 255, nullable = false)
+    private String name;
+
     @Column(name = "content", length = 255, nullable = false)
     private String content;
 
@@ -40,6 +43,14 @@ public class Task {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getContent() {
